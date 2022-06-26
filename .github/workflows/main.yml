@@ -1,1 +1,11 @@
+name: Centralised Workflow
 
+on:
+  workflow_dispatch:
+   inputs:
+      dockerimage:
+          required: true
+          type: string
+
+     
+  
