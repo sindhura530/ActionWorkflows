@@ -17,18 +17,6 @@ jobs:
     needs: [call-nodejs-workflow]
     runs-on: ubuntu-latest
     steps:
-
-      - name: Create a temporary artifact downloads folder
-        run: mkdir downloads
-        
-      - name: Add artifacts to publish to the temp folder
-        run: |
-          cd downloads
-          echo 'sindhu'    > sindhu.html
-          echo 'chaitra'    > chaitra.html
-          echo 'ramya'  > ramya.html
-          cd ..
-    
       - name: Use the Upload Artifact GitHub Action
         uses: actions/upload-artifact@v2
         with: 
