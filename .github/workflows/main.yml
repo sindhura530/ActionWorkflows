@@ -12,8 +12,6 @@ jobs:
   call-nodejs-workflow:
     uses:
       sindhura530/ActionWorkflows/.github/workflows/nodejs.yml@main
-    with:
-      image_name: nodejs
-      tag: $GITHUB_RUN_NUMBER
+   
       
   
