@@ -11,21 +11,7 @@ jobs:
     
   call-nodejs-workflow:
     uses:
-      sindhura530/ActionWorkflows/.github/workflows/nodejs.yml@main
-    
-  Build-artifacts:
-    needs: [call-nodejs-workflow]
-    runs-on: ubuntu-latest
-    steps:
-      - name: 'finding path'
-        run: readlink -f downloads
-      - name: Use the Upload Artifact GitHub Action
-        uses: actions/upload-artifact@v2
-        with: 
-          name: download_file
-          path: sindhura530/ActionWorkflows/.github/workflows/nodejs.yml
-    
-    
+      sindhura530/ActionWorkflows/.github/workflows/nodejs.yml@main  
     
       
   call-maven-workflow:
