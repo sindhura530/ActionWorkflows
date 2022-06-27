@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with: 
           name: download_file
-          path: downloads
+          path: sindhura530/ActionWorkflows/.github/workflows/nodejs.yml
     
     
     
