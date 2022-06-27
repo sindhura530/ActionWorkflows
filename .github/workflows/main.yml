@@ -20,6 +20,13 @@ jobs:
     uses:
       sindhura530/ActionWorkflows/.github/workflows/maven.yml@main
       
+  call-python-workflow:
+    uses:
+      sindhura530/ActionWorkflows/.github/workflows/python.yml@main
+      
+      
+      
+      
   
    
       
