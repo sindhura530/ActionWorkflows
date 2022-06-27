@@ -1,4 +1,4 @@
-name: Maven
+name: maven
 
 on: [push, pull_request]
 
