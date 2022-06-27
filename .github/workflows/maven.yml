@@ -1,10 +1,13 @@
 name: maven
 
-on: [push]
-
+on: 
+  workflow_call:
+  
 jobs:
-  compile:
-    runs-on: ubuntu-20.04
+  build:
+
+    runs-on: ubuntu-latest
+    
     strategy:
       matrix:
         java: [ 11, 12, 13 ]
