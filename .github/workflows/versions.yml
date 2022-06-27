@@ -1,0 +1,12 @@
+name: versions
+
+parameters:
+  version: ""
+jobs
+- job: build
+  displayName: "Build .NET Application
+  pool: 
+    vmImage: "ubuntu-latest"
+  steps:
+    - ${{ if ne(parameters.version, '1.0') }}:
+        - script: "echo 'success!'"
